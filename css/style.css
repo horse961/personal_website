@@ -1,0 +1,178 @@
+@import url('bootstrap.min.css');
+
+/* UTILITIES */
+
+.custom-align {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: flex-end;
+}
+
+.custom-align img {
+    width: 35%;
+    height: 35%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 10px;
+}
+
+/* BACKGROUND */
+
+html, body {
+    background-image: url("../img/website_bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+/* BACKGROUND OF NAV */
+
+.topnav {
+    background-color: darkslategray;
+}
+
+/* NAV BAR */
+
+.topnav a {
+    float: left;
+    display: block;
+    z-index: 10;
+    color: whitesmoke;
+    text-align: center;
+    padding: 18px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 4px solid transparent;
+}
+
+/* NAV BAR STATUS */
+
+.topnav a:hover {
+    border-bottom: 4px solid darkcyan;
+    text-emphasis-color: mediumpurple;
+    transition: 0.25s;
+}
+
+.topnav a.active {
+    border-bottom: 4px solid darkcyan;
+}
+
+.topnav a.contact {
+    align-content: end;
+}
+
+/* CONTACT DROPDOWN MENU */
+
+.dropdown-menu {
+    background-color: darkslategray;
+}
+
+.dropdown-item {
+    background-color: darkslategray;
+    transition: background-color 0.35s;
+    color: darkslategray;
+    align-items: center;
+    display: flex;
+}
+
+.dropdown-item:hover {
+    color: lightslategrey;
+    background-color: darkslategray;
+    border-bottom: none;
+    transition: 0.25s;
+}
+
+
+/* */
+
+.timeline {
+    position: relative;
+    padding: 21px 0px 10px;
+    margin-top: 4px;
+    margin-bottom: 30px;
+}
+
+.timeline .line {
+    position: absolute;
+    width: 5px;
+    display: block;
+    top: 0px;
+    bottom: 0px;
+    margin-left: 30px;
+}
+
+.timeline .separator {
+    border-top: 1px solid;
+    padding: 5px;
+    padding-left: 38px;
+    margin-left: 30px;
+}
+
+.timeline .panel {
+    position: relative;
+    margin: 10px 0 21px 70px;
+    clear: both;
+}
+
+.timeline .panel::before {
+    position: absolute;
+    display: block;
+    top: 8px;
+    left: -24px;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 12px transparent;
+    border-right-color: inherit;
+}
+
+.timeline .panel .panel-heading.icon * {
+    font-size: 20px;
+    vertical-align: middle;
+    line-height: 40px;
+}
+
+.timeline .panel .panel-heading.icon {
+    position: absolute;
+    left: -60px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border-radius: 50%;
+    text-align: center;
+    float: left;
+}
+
+.timeline .panel-outline {
+    border-color: transparent;
+    background: transparent;
+    box-shadow: none;
+}
+
+.timeline .panel-outline .panel-body {
+    padding: 10px 0;
+}
+
+.timeline .panel-outline .panel-heading:not(.icon),
+.timeline .panel-outline .panel-footer {
+    display: none;
+}
+
+
+/* LOWER HEADER */
+
+.lowfield {
+    background-color: darkslategray;
+    float: none;
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 18px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 4px solid transparent;
+}
